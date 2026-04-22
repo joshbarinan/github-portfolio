@@ -1,9 +1,9 @@
-import type { NextConfig } from "next";
+const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig = {
   output: "export",
-  basePath: "/github-portfolio",
-  assetPrefix: "/github-portfolio/",
+  basePath: isProd ? "/github-portfolio" : "",
+  assetPrefix: isProd ? "/github-portfolio/" : "",
 };
 
 export default nextConfig;
