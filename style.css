@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: system-ui;
+  background: #020617;
+  color: #e2e8f0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid #1e293b;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #94a3b8;
+}
+
+.hero {
+  padding: 80px 40px;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.desc {
+  margin-top: 20px;
+  max-width: 600px;
+  color: #94a3b8;
+}
+
+section {
+  padding: 60px 40px;
+}
+
+.card {
+  border: 1px solid #1e293b;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
