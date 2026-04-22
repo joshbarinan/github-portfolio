@@ -1,5 +1,16 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
   font-family: system-ui;
   background: #020617;
   color: #e2e8f0;
@@ -8,37 +19,79 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
+  align-items: center;
+  padding: 20px 60px;
   border-bottom: 1px solid #1e293b;
 }
 
 nav a {
-  margin-left: 20px;
-  text-decoration: none;
+  margin-left: 25px;
   color: #94a3b8;
+  text-decoration: none;
+  font-size: 14px;
 }
 
-.hero {
-  padding: 80px 40px;
+nav a:hover {
+  color: white;
+}
+
+main {
+  flex: 1;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 20px;
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: 48px;
+}
+
+.subtitle {
+  margin-top: 10px;
+  color: #94a3b8;
 }
 
 .desc {
   margin-top: 20px;
-  max-width: 600px;
-  color: #94a3b8;
-}
-
-section {
-  padding: 60px 40px;
+  line-height: 1.6;
 }
 
 .card {
   border: 1px solid #1e293b;
   padding: 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.card:hover {
+  border-color: #334155;
+}
+
+.btn {
+  display: inline-block;
   margin-top: 20px;
-  border-radius: 8px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: #1e293b;
+}
+
+.btn-primary {
+  background: white;
+  color: black;
+  border: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #1e293b;
+  color: #94a3b8;
 }
