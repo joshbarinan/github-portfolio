@@ -95,3 +95,38 @@ footer {
   border-top: 1px solid #1e293b;
   color: #94a3b8;
 }
+
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  color: #94a3b8;
+}
+
+li {
+  margin-bottom: 6px;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #1e293b;
+}
+.card {
+  border: 1px solid #1e293b;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #334155;
+}
+h1 {
+  margin-bottom: 20px;
+}
+
+.card + .card {
+  margin-top: 25px;
+}
